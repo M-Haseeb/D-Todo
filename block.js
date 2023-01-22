@@ -7,7 +7,9 @@ connector.addEventListener("click", async ()=>{
         connector.innerHTML="Connected";
         console.log(account);
     }
-
+    else{
+        alert("Install Meta Mask Chrome Extension!");
+    }
     const abi=[
         {
             "inputs": [
