@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7/web3.min.js" integrity="sha512-yAmmVkOXqtDZRaueLdmLwMB67JtaRtjFzQGiAiJKvLiFlDvq4Tzm5R6uLcOMyvPRQlXpYHdYxc5IbiCwuquhUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D To-Do</title>
+</head>
+<body>
+  
+
+    <nav>
+        <div class="nav-wrapper black">
+          <a href="#" class="brand-logo center">To-Do's</a>
+          
+        </div>
+      </nav>
+      <div class="row" style="margin-top: 2px !important;margin-left: 25% !important;height: 30px !important;">
+        <form class="col s9">
+          <div class="row">
+            <div class="input-field col s9">
+              <textarea id="task" class="materialize-textarea"></textarea>
+              <label for="textarea1">Add Task</label>
+            </div>
+            <a class="btn-floating btn-large waves-effect waves-light red" id="add" style="display:flex;justify-content:center;align-items:center;font-size:25px;top:30px;text-align:center;width:50px;height:50px;">+</a>
+          </div>
+        </form>
+      </div>
+     <div class="div1 d-flex center right" style="position: relative !important;top:20px;right:15%;"><a class="waves-effect hoverable waves-light red btn" id="connector">Connect Wallet</a>
+      
+    </div> 
+      <div>
+        
+    </div>
+
+        
+     <div class=" center centered" style="position:relative;top:60px !important;width:70%;margin:auto;"> 
+          <table class="centered highlight " >
+        <thead>
+          <tr>
+              <th>Description</th>
+              <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="root-body">
+          
+          
+        </tbody>
+      </table>
+      </div>
+
+    
+      
+      <script>M.AutoInit();
+        document.addEventListener('onload',(function() {
+    M.updateTextFields();
+  }));
+</script>
+     <script src="./block.js"></script>
+    </body>
+</html>
